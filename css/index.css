@@ -1,0 +1,85 @@
+a.logo{
+    font-size: 2rem;
+}
+
+.items a{
+    font-size: 1.5rem;
+}
+
+.top{
+    background-image: url(../img/light.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20rem 10rem 20rem 10rem;
+}
+
+.top h1{
+    text-align: center;
+    font-size: 5rem;
+    color: #5a5a5a;
+    font-family: serif;
+}
+
+.value{
+    padding: 7.5rem 10rem 7.5rem 10rem;
+    background-color: #F7FFDC;
+}
+
+.value h2{
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem 0rem;
+    color: #5a5a5a;
+    font-family: serif;
+}
+
+.value p{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #5a5a5a;
+    font-family: serif;
+    padding: 3rem 0rem;
+}
+
+.service{
+    padding: 7.5rem 10rem 7.5rem 10rem;
+    text-align: center;
+}
+
+.service h2{
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem 0rem;
+    color: #5a5a5a;
+    font-family: serif;
+}
+
+.service p{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #5a5a5a;
+    font-family: serif;
+    padding: 3rem 0rem;
+}
+
+.service img{
+    width: 30rem;
+}
+
+.about{
+    padding: 7.5rem 10rem 7.5rem 10rem;
+    background-color: #F7FFDC;
+}
+
+.about h2{
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem 0rem;
+    color: #5a5a5a;
+    font-family: serif;
+}
+
+.about .table{
+    font-size: 1.5rem;
+}

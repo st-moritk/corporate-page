@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>株式会社Motivate</title>
-		<link rel="stylesheet" href="css/index.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="sample.js"></script>
-	</head>
-	<body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>株式会社Motivate</h1>
+
+<head>
+    <meta charset="utf-8">
+    <title>株式会社Motivate</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="sample.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#top">Motivate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse items" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#value">Value</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <div class="row top" id="top"> 
+            <h1>「働く」を再定義する</h1>
         </div>
-	</body>
+        <div class="row value" id="value">
+            <h2>Value</h2>
+            <p>
+                すべての人が働くことを<br>
+                楽しくなるような<br>
+                社会を創り上げる
+            </p>
+        </div>
+        <div class="row service" id="service">
+            <div class="col-md-12">
+                <h2>Service</h2>
+                <img src="img/advans_logo.png">
+                <p>
+                    関西圏に特化した<br>
+                    長期インターン求人サイト
+                </p>
+            </div>
+        </div>
+        <div class="row about" id="about">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h2>About</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>会社名</th>
+                            <td>株式会社Motivate</td>
+                        </tr>
+                        <tr>
+                            <th>CEO</th>
+                            <td>佐保健太郎</td>
+                        </tr>
+                        <tr>
+                            <th>CTO</th>
+                            <td>守高成悟</td>
+                        </tr>
+                        <tr>
+                            <th>連絡先</th>
+                            <td>info@motivate.co.jp</td>
+                        </tr>
+                        <tr>
+                            <th>連絡先</th>
+                            <td>2022年1月</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+
 </html>
