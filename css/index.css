@@ -64,7 +64,8 @@ a.logo{
 }
 
 .service img{
-    width: 30rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .about{
