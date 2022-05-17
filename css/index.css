@@ -11,18 +11,18 @@ a.logo{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 20rem 10rem 20rem 10rem;
+    padding: 20rem 0rem;
 }
 
 .top h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: #5a5a5a;
     font-family: serif;
 }
 
 .value{
-    padding: 7.5rem 10rem 7.5rem 10rem;
+    padding: 7.5rem 0rem;
     background-color: #F7FFDC;
 }
 
@@ -68,7 +68,7 @@ a.logo{
 }
 
 .about{
-    padding: 7.5rem 10rem 7.5rem 10rem;
+    padding: 7.5rem 0rem;
     background-color: #F7FFDC;
 }
 
