@@ -10,79 +10,48 @@ a.logo{
     font-size: 1.5rem;
 }
 
-.top{
-    background-image: url(../img/light.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 20rem 0rem;
+.height-3{
+    height: 3rem;
 }
 
-.top h1{
-    text-align: center;
-    font-size: 4.5rem;
-    color: #5a5a5a;
-    font-family: serif;
+.redefining-work{
+    font-size: calc(1.6rem + 4.5vw);
 }
 
-.value{
-    padding: 7.5rem 0rem;
-    background-color: #F7FFDC;
+.value-phrase{
+    font-size: calc(0.5rem + 5vw);
+}
+
+.orange-underline{
+    background:linear-gradient(transparent 70%, #FF6600 0%);
+}
+
+.future-img{
+    position: relative;
+    top: -2rem;
+    z-index: -1;
 }
 
 .value h2{
     font-size: 5rem;
     text-align: center;
-    padding: 2rem 0rem;
     color: #5a5a5a;
     font-family: serif;
 }
 
-.value p{
-    font-size: 2.2rem;
-    text-align: center;
-    color: #5a5a5a;
-    font-family: serif;
-    padding: 3rem 0rem;
+.text-right{
+    text-align: right;
 }
 
-.service{
-    padding: 7.5rem 0rem;
-    text-align: center;
+#logo{
+    height: 25rem;
+    object-fit: contain;
 }
 
-.service h2{
-    font-size: 5rem;
-    text-align: center;
-    padding: 2rem 0rem;
-    color: #5a5a5a;
-    font-family: serif;
-}
-
-.service p{
-    font-size: 2.2rem;
-    text-align: center;
-    color: #5a5a5a;
-    font-family: serif;
-    padding: 3rem 0rem;
-}
-
-.service img{
-    max-width: 100%;
-    height: auto;
-}
-
-.about{
-    padding: 7.5rem 0rem;
-    background-color: #F7FFDC;
-}
-
-.about h2{
-    font-size: 5rem;
-    text-align: center;
-    padding: 2rem 0rem;
-    color: #5a5a5a;
-    font-family: serif;
+.talking-img{
+    position: relative;
+    top: -5rem;
+    z-index: -1;
 }
 
 .about .table{
