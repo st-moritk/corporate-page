@@ -1,0 +1,83 @@
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+.logo {
+    background-size: contain;
+    background-position: center;
+    height: 4rem;
+    width: 12rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding: 0px;
+}
+
+a.logo{
+    font-size: 2rem;
+}
+
+.items a{
+    font-size: 1.5rem;
+}
+
+.height-3{
+    height: 4rem;
+}
+
+.redefining-work{
+    font-size: calc(1.6rem + 4.5vw);
+}
+
+.value-phrase{
+    font-size: calc(0.5rem + 5vw);
+}
+
+.orange-underline{
+    background:linear-gradient(transparent 70%, #FF6600 0%);
+}
+
+.future-img{
+    position: relative;
+    top: calc(-20px - 10 * (100vw - 400px) / 1040);
+    z-index: -1;
+}
+.text-right{
+    text-align: right;
+}
+
+#logo{
+    height: 20rem;
+    object-fit: contain;
+}
+
+.talking-img{
+    position: relative;
+    top: calc(-60px - 1vw);
+    z-index: -1;
+}
+
+.about .table{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.news-image-container {
+    position: relative;
+    width: 100%; /* あなたの好きな幅に設定 */
+    padding-bottom: 56.25%; /* 16:9のアスペクト比 */
+    overflow: hidden;
+}
+
+.news-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像がコンテナにフィットするように調整 */
+}
