@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1 class="text-5xl">{{ page.title }}</h1>
-    <div v-html="page.contentHtml"></div>
-    <img :src="page.thumbnail.fields.file.url" :alt="page.thumbnail.fields.title">
+    <div v-for="item in items" :key="item.sys.id">
+      <h1>{{ item.fields.title }}</h1>
+      <div v-html="item.fields.contentHtml"></div>
+      <img :src="item.fields.thumbnail.fields.file.url" :alt="item.fields.thumbnail.fields.title">
+    </div>
   </div>
 </template>
 
@@ -19,18 +21,21 @@ export default {
     const response = await $contentful.getEntries({
       content_type: 'newsArticle', // Contentfulのコンテンツタイプを指定します
       // order: '-fields.createdAt',
-      // limit: 1,
+      limit: 10,
     });
 
-    // console.log(response.items[0].fields.content.content)
     if (response.items.length > 0) {
-      const page = response.items[1].fields;
-      page.contentHtml = documentToHtmlString(page.content);
-      console.log("page.contentHtml" + page.contentHtml)
-      return { page };
+      const items = response.items.map(item => {
+        const fields = item.fields;
+        fields.contentHtml = documentToHtmlString(fields.content);
+        item.fields = fields;
+        return item;
+      });
+      console.log(items);
+      return { items };
     }
 
-    return { page: null };
+    return { items: [] };
   },
   mounted() {
     this.contentHtml = documentToHtmlString(this.page.content);
