@@ -1,12 +1,12 @@
 <template>
   <div class="w-full">
     <header class="bg-white shadow-md fixed w-full z-10">
-      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 md:px-6 md:px-8">
         <div class="flex justify-between h-16">
           <div class="flex">
             <div class="-ml-2 mr-2 flex items-center">
               <a href="/" class="flex-shrink-0">
-                <img class="h-8 w-8" src="/logo.png" alt="Workflow logo">
+                <img class="h-8 w-8 object-contain object-center" src="/logo.png" alt="Workflow logo">
               </a>
             </div>
           </div>
@@ -24,24 +24,62 @@
         </div>
       </div>
     </header>
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 mt-5" id="top">
-      <div class="flex flex-wrap -mx-4">
-        <div class="w-full px-4">
-          <h1 class="text-3xl font-bold orange-underline">Redefining Work</h1>
+
+    <div class="w-full flex flex-wrap pt-16">
+      <div class="w-full md:w-1/12"></div>
+      <div class="w-full flex flex-wrap md:w-10/12">
+        <div class="w-full">
+          <h1 class="text-8xl font-bold inline-block orange-underline">Redefining Work</h1>
         </div>
-        <div class="w-full lg:w-1/2 px-4 order-last lg:order-first">
-          <h2 class="text-2xl font-bold mb-5">「はたらく」を再定義する</h2>
-          <p class="text-lg mb-3 leading-relaxed">
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl font-bold text-3xl mb-5">「はたらく」を再定義する</h2>
+          <p class="text-lg mb-3 px-3 leading-relaxed">
             日本では8割以上の社会人が「はたらくことにワクワクできていない」現状があります。
             この問題は新卒の早期離職にも反映されており、国内の新卒3年以内の離職率は32.8%にのぼっているのです。<br><br>
             株式会社Motivateは「はたらく」を再定義するため、まずは新卒就活のミスマッチを長期インターンシップという視点から改善していきます。
           </p>
         </div>
-        <div class="w-full lg:w-1/2 px-4 order-first lg:order-last mb-5">
-          <img src="/future-img.jpg" class="w-full">
+        <div class="w-full md:w-1/2">
+          <img src="/future-img.jpg">
         </div>
       </div>
+      <div class="w-full md:w-1/12"></div>
     </div>
+
+    <div class="w-full flex flex-wrap pt-16">
+      <div class="w-full md:w-1/12"></div>
+      <div class="w-full flex flex-wrap md:w-10/12">
+        <h2 class="w-full text-6xl text-center">Value</h2>
+        <div class="w-full text-right">
+          <h2 class="text-6xl font-bold inline-block orange-underline">Create a company where</h2>
+          <h2 class="text-6xl font-bold inline-block orange-underline">everyone's "work" is fun</h2>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src="/talking.jpg">
+        </div>
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl font-bold text-3xl mb-5">みんなの「はたらく」が楽しい会社をつくる</h2>
+          <p class="text-lg mb-3 px-3 leading-relaxed">
+            株式会社Motivateは自社はもちろん、すべての会社のすべての社員が楽しくはたらけるような社会にします。そのためにも以下の3つを大切にしてまいります。
+          </p>
+          <div class="flex">
+            <ol class="text-lg mx-auto list-decimal list-inside">
+              <li>
+                失敗を恐れずに挑戦し続ける
+              </li>
+              <li>
+                ギブ > テイクの精神で協力し合う
+              </li>
+              <li>
+                仲間を信じる、そして熱狂する
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/12"></div>
+    </div>
+
     <div>
       <router-link v-for="item in items" :key="item.sys.id" :to="`/news/${item.sys.id}`"
         class="block max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4">
@@ -51,7 +89,7 @@
               :alt="item.fields.thumbnail.fields.title">
           </div>
           <div class="p-8">
-            <h1 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{ item.fields.title }}</h1>
+            <h1 class="uppercase tracking-wide text-md text-indigo-500 font-semibold">{{ item.fields.title }}</h1>
             <div v-html="item.fields.contentHtml" class="mt-2 text-gray-500"></div>
           </div>
         </div>
