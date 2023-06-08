@@ -64,15 +64,9 @@
           </p>
           <div class="flex">
             <ol class="text-lg mx-auto list-decimal list-inside">
-              <li>
-                失敗を恐れずに挑戦し続ける
-              </li>
-              <li>
-                ギブ > テイクの精神で協力し合う
-              </li>
-              <li>
-                仲間を信じる、そして熱狂する
-              </li>
+              <li>失敗を恐れずに挑戦し続ける</li>
+              <li>ギブ > テイクの精神で協力し合う</li>
+              <li>仲間を信じる、そして熱狂する</li>
             </ol>
           </div>
         </div>
@@ -80,7 +74,64 @@
       <div class="w-full md:w-1/12"></div>
     </div>
 
+    <div class="w-full flex flex-wrap pt-16">
+      <div class="w-full md:w-3/12"></div>
+      <div class="w-full flex flex-wrap items-center md:w-6/12 text-center">
+        <h2 class="w-full text-6xl">Service</h2>
+        <a href="https://www.advans-intern.jp/" class="w-full">
+          <img src="/advans-logo2.jpg" class="w-full" id="logo">
+        </a>
+        <h2 class="text-3xl w-full">関西に特化した長期インターンシップ求人サイト</h2>
+      </div>
+      <div class="w-full md:w-3/12"></div>
+    </div>
+
+    <div class="w-full flex flex-wrap pt-16">
+      <div class="w-full md:w-4/12"></div>
+      <div class="w-full flex flex-wrap items-center md:w-4/12">
+        <h2 class="w-full text-6xl text-center">About</h2>
+        <table class="w-full min-w-full divide-y divide-gray-200">
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">会社名</th>
+              <td class="px-6 py-4 whitespace-nowrap">株式会社Motivate</td>
+            </tr>
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">CEO</th>
+              <td class="px-6 py-4 whitespace-nowrap">佐保健太郎</td>
+            </tr>
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">CTO</th>
+              <td class="px-6 py-4 whitespace-nowrap">守高成悟</td>
+            </tr>
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">E-mail</th>
+              <td class="px-6 py-4 whitespace-nowrap">info@motivate.co.jp</td>
+            </tr>
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">代表番号</th>
+              <td class="px-6 py-4 whitespace-nowrap">080-1529-0130</td>
+            </tr>
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">所在地</th>
+              <td class="px-6 py-4 whitespace-nowrap">兵庫県神戸市北区南五葉3-7-6 1F</td>
+            </tr>
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">有料職業紹介許可番号</th>
+              <td class="px-6 py-4 whitespace-nowrap">28-ユ-301188</td>
+            </tr>
+            <tr>
+              <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">設立</th>
+              <td class="px-6 py-4 whitespace-nowrap">2022年1月</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="w-full md:w-4/12"></div>
+    </div>
+
     <div>
+      <h2 class="w-full text-6xl text-center">News</h2>
       <router-link v-for="item in items" :key="item.sys.id" :to="`/news/${item.sys.id}`"
         class="block max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4">
         <div class="md:flex">
