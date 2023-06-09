@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" v-if="fields">
         <div class="mt-10">
             <div class="mb-4">
                 <img class="w-full h-64 object-cover rounded-lg" :src="fields.thumbnail.fields.file.url"
@@ -12,26 +12,30 @@
         </div>
     </div>
 </template>
-  
-  
+
 <script>
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import useContentful from '@/plugins/contentful'; 
 
 export default {
-    async asyncData({ $contentful, params }) {
-        const response = await $contentful.getEntries({
-            'sys.id': params.id,
-            limit: 1,
-        });
+  data() {
+    return {
+      fields: null,
+    };
+  },
+  async created() {
+    const { getEntries } = useContentful(this.$nuxt.context);
+    const response = await getEntries({
+        'sys.id': this.$route.params.id,
+        limit: 1,
+    });
 
-        if (response.items.length > 0) {
-            const fields = response.items[0].fields;
-            fields.contentHtml = documentToHtmlString(fields.content);
-            return { fields };
-        }
-
-        return { fields: null };
-    },
+    if (response.items.length > 0) {
+      const item = response.items[0];
+      this.fields = item.fields;
+      this.fields.contentHtml = documentToHtmlString(this.fields.content);
+      console.log("fields", this.fields)
+    }
+  },
 };
 </script>
-  
