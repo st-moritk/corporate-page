@@ -34,7 +34,6 @@ export default {
       const item = response.items[0];
       this.fields = item.fields;
       this.fields.contentHtml = documentToHtmlString(this.fields.content);
-      console.log("fields", this.fields)
     }
   },
 };

@@ -44,7 +44,7 @@
       <div class="w-full lg:w-1/12"></div>
       <div class="w-full flex flex-wrap lg:w-10/12">
         <div class="w-full">
-          <h1 class="text-5xl lg:text-8xl font-bold inline-block orange-underline">Redefining Work</h1>
+          <h1 class="text-4xl lg:text-8xl font-bold inline-block orange-underline">Redefining Work</h1>
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-bold text-2xl lg:text-3xl m-5">「はたらく」を再定義する</h2>
