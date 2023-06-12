@@ -149,7 +149,7 @@
       <div class="w-full lg:w-4/12"></div>
     </div>
 
-    <div>
+    <div class="pb-16 px-5">
       <h2 class="w-full text-3xl lg:text-6xl text-center mb-8">News</h2>
       <router-link v-for="item in items" :key="item.sys.id" :to="`/news/${item.sys.id}`"
         class="block max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden lg:max-w-2xl m-4">
